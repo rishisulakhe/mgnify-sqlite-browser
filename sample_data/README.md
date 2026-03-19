@@ -13,7 +13,7 @@ Or use wget:
 wget -O sample.gff "https://www.ebi.ac.uk/metagenomics/api/v1/genomes/MGYG000535630/downloads/MGYG000535630.gff"
 ```
 
-Then convert:
+Then convert
 
 ```bash
 cd python
