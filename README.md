@@ -1,6 +1,4 @@
-# MGnify Genome Feature Browser — Proof of Concept
-
-> **GSoC 2026 | EMBL-EBI | SQLite WASM**
+# MGnify Genome Feature Browser
 
 Query metagenome annotations entirely in the browser using SQLite + WebAssembly.
 
@@ -48,52 +46,3 @@ npm run dev
 
 Open http://localhost:5173 in your browser.
 
-## Project Structure
-
-```
-mgnify-sqlite-browser-poc/
-├── README.md
-├── python/
-│   ├── gff_to_sqlite.py        # GFF3 → SQLite converter (CLI)
-│   ├── requirements.txt
-│   └── tests/
-│       └── test_converter.py    # pytest tests
-├── frontend/
-│   ├── package.json
-│   ├── vite.config.ts
-│   ├── tsconfig.json
-│   ├── index.html
-│   ├── public/                  # .db file goes here after generation
-│   └── src/
-│       ├── main.tsx
-│       ├── App.tsx
-│       ├── types.ts
-│       ├── hooks/
-│       │   └── useSqliteDb.ts   # sql.js WASM loader hook
-│       ├── components/
-│       │   ├── FilterPanel.tsx  # Search filters
-│       │   ├── ResultsTable.tsx # Results display
-│       │   └── StatsBar.tsx     # Database statistics
-│       └── lib/
-│           └── queryBuilder.ts  # Parameterized SQL builder
-├── gff-files/                   # Sample GFF files
-├── sample_data/
-│   └── README.md                # Instructions to download MGnify data
-└── .gitignore
-```
-
-## Screenshots
-
-*Screenshots coming soon*
-
-## Related
-
-- [GSoC 2026 — EMBL-EBI Projects](https://www.ebi.ac.uk/about/careers/gsoc/)
-- [MGnify Genomes](https://www.ebi.ac.uk/metagenomics/genomes)
-- [sql.js — SQLite compiled to WebAssembly](https://github.com/sql-js/sql.js)
-- [sqlite-wasm-http — HTTP Range request loading](https://github.com/niccoloraspa/sqlite-wasm-http)
-- [JBrowse 2 — Genome browser](https://jbrowse.org/jb2/)
-
-## Author
-
-Built as a proof-of-concept for GSoC 2026 application to EMBL-EBI (Project 14: *A Genomic Feature Database in the Browser*).
